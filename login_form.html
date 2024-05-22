@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/stylesMobile.css">
+    <link rel="icon" href="img/логотип.svg" type="img/svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+</head>
+<body>
+    <img src="img/Vector7.svg" id="v4" alt="svg">
+    <img src="img/Vector8.svg" id="v5" alt="svg">    
+
+    <header>    <!-- Навигация шапка -->
+        <a href="#"><img class="logo" src="img/логотип.svg" alt="логотип"></a>
+        <nav>
+            <a href="#">Личный кабинет</a>
+            <a href="#">Наши курсы</a>
+            <a href="#">Записаться на курс</a>
+            <a href="#">Новости</a>
+        </nav>
+        <button class="btn_style1">Назад</button>
+    </header>
+    <div class="body_reg">
+        <form id="reg_form" action="#"> <!-- Форма авториизации -->
+            <h1>Авторизация</h1>
+            <div class="reg_inputs">
+                <label for="name">ФИО</label>
+                <input type="text" name="name" id="name" placeholder="Иванов Иван Иванович" required>
+    
+                <label for="password">Пароль</label>
+                <input type="password" placeholder="пароль" id="password" name="password" required>
+    
+                <button id="login_btn" class="btn_style1">Авторизоваться</button>
+                <p>или</p>
+                <button id="to_reg_btn" class="btn_style1" onclick="ToRegistration()">Зарегистрироваться</button>
+            </div>
+        </form>
+    </div>
+    <footer>    <!-- подвал -->
+        <div class="references">
+            <div class="ref">
+                <h4>Навигация по сайту</h4>
+                <a href="#">Главная</a>
+                <a href="#">Личный кабинет</a>
+                <a href="#">Курсы</a>
+                <a href="#">Материалы по курсам</a>
+                <a href="#">Журнал оценок</a>
+                <a href="#">График обучения</a>
+            </div>
+            <div class="ref">
+                <h4>Связаться с нами</h4>
+                <a href="#">телефон 8 (800) 111 - 11 - 11</a>
+                <a href="#">VK</a>
+                <a href="#">Telegram</a>
+                <a href="#">Одноклассники</a>
+            </div>
+            <div class="ref">
+                <h4>Еще</h4>
+                <a href="#">пользовательское соглашение</a>
+                <a href="#">политика конфиденциальности</a>
+            </div>
+        </div>
+        <div class="logo_ref">
+            <img src="img/логотип.svg" alt="логотип">
+            <p>©, центр по обучению пилотирования на БПЛА, 2023</p>
+        </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/stylesMobile.css">
+    <link rel="icon" href="img/логотип.svg" type="img/svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсы БПЛА</title>
+</head>
+<body> <!--Главная страница-->
+    <!-- пятна на фоне -->
+    <img id="v1" src="img/Vector1.svg" alt="svg">
+    <img id="v2" src="img/Vector2.svg" alt="svg">
+    <img id="v3" src="img/Vector3.svg" alt="svg">
+
+    <header> <!-- шапка сайта -->
+        <a href="#"><img class="logo" src="img/логотип.svg" alt="логотип"></a>
+        <nav> <!-- навигация -->
+            <a href="#">Личный кабинет</a>
+            <a href="#">Наши курсы</a>
+            <a href="#">Записаться на курс</a>
+            <a href="#">Новости</a>
+        </nav>
+        <button class="btn_style1" onclick="ToRegistration()">Вход</button>
+    </header>
+
+    <div class="first"> <!-- краткая информация о курсах -->
+        <div>
+            <h1>курс по управлению
+                <br>квадрокоптерами</h1>
+            <p>Курсы управления квадрокоптерами - это отличная возможность
+                для всех желающих освоить современные технологии в области 
+                беспилотных летательных аппаратов. Наши занятия предназначены 
+                как для начинающих, так и для опытных пилотов, 
+                которые хотят улучшить свои навыки.</p>
+            <button class="btn_style2">Записаться &gt;</button>
+        </div>
+        <img class="drone" src="img/drone.png" alt="дрон">
+    </div>
+
+    <div class="infografic"> <!-- блок инфографики -->
+        <h2>Почему стоит обучиться управлению квадрокоптерами?</h2>
+<div class="infografica">
+    <div class="infograf_el i1"> <!-- бнсплатное обучение -->
+        <h3>Бесплатное</h3>
+        <p>обучение для всех желающих изучать новое</p>
+        <img src="img/like.webp" alt="лайк">
+    </div>
+    <div class="infograf_el i2"> <!-- современные технологии -->
+        <h3>Современное</h3>
+        <p>оборудование и передовые технологии</p>
+        <img src="img/DRONE2.png" alt="дрон">
+    </div>
+    <div class="infograf_el i3"> <!-- график обучения -->
+        <h3>Гибкий</h3>
+        <p>график обучения и доступ к онлайн материалам</p>
+        <img src="img/calendar.png" alt="календарь">        
+    </div>
+    <div class="infograf_el i4"> <!-- преподаватели -->
+        <h3>Преподаватели</h3>
+        <p>с опытом в области авиации и дроноведения</p>
+        <img src="img/teacher.png" alt="учитель">
+    </div>
+</div>
+    </div>
+
+    <h2 id="our_courses">Наши курсы</h2>
+
+    <div class="slider_container"> <!-- слайдер с курсами -->
+        <div class="slider">
+            <div class="course c1"> <!-- базовый уровень слайд 1-->
+                <div class="background_layer"></div>
+                <div class="info">
+                    <h3>Базовый уровень обучения</h3>
+                    <p>ориентирован на обучающихся 12-18 лет и старше, 
+                        <br>имеющим начинающий уровень или взрослым, 
+                        <br>осваивающим новые профессиональные компетенции 
+                        <br>в области пилотирования БПЛА</p>
+                    <button class="btn_style2" onclick="ToMediumLevel()">Записаться &gt;</button>
+                </div>
+            </div>
+
+            <div class="course c2">    <!-- курсы для начинающих слайд 2 -->
+                <div class="background_layer"></div>
+                <div class="info">
+                    <h3>Курсы для начинающих</h3>
+                    <p>идеально подойдет в качестве 
+                        <br>дополнителього образования
+                        <br>для детей среднего школьного взраста (10-14 лет)</p>
+                    <button class="btn_style2" onclick="ToStartLevel()">Записаться &gt;</button>
+                </div>   
+            </div>
+
+            <div class="course c3"> <!-- продвинутый уровень слайд 3-->
+                <div class="background_layer"></div>
+                <div class="info">
+                    <h3>продвинутый уровень</h3>
+                    <p>ориентирован на обучающихся 12-18 лет и старше, 
+                        <br>имеющим начинающий уровень или взрослым, 
+                        <br>осваивающим новые профессиональные 
+                        <br>компетенции в области пилотирования БПЛА</p>   
+                    <button class="btn_style2" onclick="ToAdvancedLevel()">Записаться &gt;</button>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <div class="btn_slider">   <!-- кнопки перехода по слайдам -->
+        <button id="prev-button" class="btn_style2">&lt;</button>
+        <button id="next-button" class="btn_style2">&gt;</button>
+    </div>
+
+    <footer> <!-- подвал -->
+    <div class="references">
+        <div class="ref">
+            <h4>Навигация по сайту</h4>
+            <a href="#">Главная</a>
+            <a href="#">Личный кабинет</a>
+            <a href="#">Курсы</a>
+            <a href="#">Материалы по курсам</a>
+            <a href="#">Журнал оценок</a>
+            <a href="#">График обучения</a>
+        </div>
+        <div class="ref">
+            <h4>Связаться с нами</h4>
+            <a href="#">телефон 8 (800) 111 - 11 - 11</a>
+            <a href="#">VK</a>
+            <a href="#">Telegram</a>
+            <a href="#">Одноклассники</a>
+        </div>
+        <div class="ref">
+            <h4>Еще</h4>
+            <a href="#">пользовательское соглашение</a>
+            <a href="#">политика конфиденциальности</a>
+        </div>
+    </div>
+    <div class="logo_ref">
+        <img src="img/логотип.svg" alt="логотип">
+        <p>©, центр по обучению пилотирования на БПЛА, 2023</p>
+    </div>
+    </footer>
+
+    <script src="styles/script.js">
+    </script>
+</body>
+</html>
